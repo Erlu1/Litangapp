@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistermainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:id="@+id/back"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号注册"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+
+    <EditText
+        android:id="@+id/userAccount"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="50dp"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/userAccount1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="50dp"
+        android:ems="10"
+        android:hint="请输入昵称"
+        android:inputType="text"
+        android:layout_below="@id/userAccount"
+        />
+
+
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:layout_below="@id/userAccount1"
+        android:hint="请输入密码"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/Register"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="注册"
+        android:onClick="register"
+        android:backgroundTint="@color/bjcolor"
+        android:layout_below="@id/userPassword"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userPassword"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/zc_R1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已阅读并同意协议"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userPassword"
+        android:layout_marginTop="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="遇到问题？"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userPassword"
+        android:layout_marginTop="300dp"/>
+
+</RelativeLayout>
